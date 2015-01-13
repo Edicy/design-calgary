@@ -30,9 +30,9 @@
       <h2>{% editable article.title plain="true" %}</h2>
       <div class="data">{{ article.author.name }}, <a href="{{ article.url }}#comments">{{ "comments" |lc }}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span></a></div>
       <p class="clearfix">
-       {% editable article.excerpt %}
+       <div data-search-indexing-allowed="true">{% editable article.excerpt %}</div>
        <br /><br />
-       {% editable article.body %}
+       <div data-search-indexing-allowed="true">{% editable article.body %}</div>
       </p>
      </div>
           
