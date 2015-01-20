@@ -35,7 +35,7 @@
     {% for item in site.visible_menuitems %}
     <li{% unless item.translated? %} class="untranslated"{% endunless %}><a href="{{ item.url }}" {% unless item.translated? %}class="fci-editor-menuadd"{% endunless %} {% if item.selected? %} class="active"{% endif %}>{{ item.title }}</a></li>
     {% endfor %}
-      {% if editmode %}{% menubtn site.hidden_menuitems %}{% endif %}
+      {% if editmode %}<li>{% menubtn site.hidden_menuitems %}</li>{% endif %}
     {% if editmode %}<li>{% menuadd %}</li>{% endif %}
    </ul>
   </div>	

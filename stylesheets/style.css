@@ -122,6 +122,13 @@ display:inline;
 	}
 	#mainmenu a:hover, #submenu a:hover { background:#c8f1ff;	}
 	#mainmenu a.active {font-weight:normal;	background:#fff;}
+  #mainmenu a.edy-cbtn, #submenu a.edy-cbtn {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  #mainmenu a.edy-cbtn:hover, #submenu a.edy-cbtn:hover {
+    background: none;
+  }
 	#submenu {
   background:#feffff url('../images/submenu-b.png?1') repeat-x top; 
 
