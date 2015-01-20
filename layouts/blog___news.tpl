@@ -12,7 +12,7 @@
   <div id="content">
    <div id="body" class="left">
     <div class="blog text">
-                                    <div class="text-inner">
+                                    <div class="text-inner clearfix">
                                        {% addbutton class="add-article" %}
      
                                       <h1>{{ page.title }}</h1>

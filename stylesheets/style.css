@@ -1,5 +1,7 @@
 .clearfix:after {
-  content: "."; display: block;height: 0;clear: both;font-size: 1px;line-height: 1px;visibility: hidden;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 body, p {margin:0; padding:0;}
@@ -136,7 +138,6 @@ display:inline;
   width:745px;
   width:745px;
   display:block;
-  overflow:hidden;
 	}
 	.menuHR {background:#fff; height:4px; line-height:1px; font-size:1px;}
 	div#body {
@@ -151,7 +152,7 @@ display:inline;
 	}
         #body .text-inner {
            width: 410px;
-           overflow: hidden;
+           /*overflow: hidden;*/
   padding-bottom: 1px;
         }
 	#body .text h2, #body .text h3 {

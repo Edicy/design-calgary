@@ -46,7 +46,7 @@
    <div class="clearerwhite"></div>
   </div>
   <div class="menuHR"></div>
-  <div id="submenu"><ul>{% for level2 in item.visible_children %}
+  <div id="submenu" class="clearfix"><ul>{% for level2 in item.visible_children %}
    <li{% unless level2.translated? %} class="untranslated"{% endunless %}><a href="{{ level2.url }}" {% unless level2.translated? %}class="fci-editor-menuadd"{% endunless %} {% if level2.selected? %} class="active"{% endif %}>{{ level2.title }}</a></li>
    {% endfor %}
      <li>{% menubtn item.hidden_children %}</li>
