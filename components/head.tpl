@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 	{% stylesheet_link "style.css?calgary" %}
-	{% if editmode %}{% stylesheet_link "assets/admin/editmode.css" static_host="true" %}{% endif %}
+	{% if editmode %}<style>.untranslated{opacity:.5;filter:alpha(Opacity=50);zoom:1}</style>{% endif %}
 
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
@@ -22,4 +22,4 @@ display: inline;
 </style>
 <![endif]-->
 
-<!--[if IE]><link rel="stylesheet" href="http://static.edicy.com/assets/ie.css" type="text/css" /><![endif]-->
+<!--[if IE]><style>.clearfix { zoom:1; }</style><![endif]-->
