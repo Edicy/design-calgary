@@ -29,11 +29,11 @@
      <div>
       <h2>{% editable article.title plain="true" %}</h2>
       <div class="data">{{ article.author.name }}, <a href="{{ article.url }}#comments">{{ "comments" |lc }}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span></a></div>
-      <p class="clearfix">
-       <div data-search-indexing-allowed="true">{% editable article.excerpt %}</div>
+      <div class="clearfix content-hyphenate">
+       {% editable article.excerpt %}
        <br /><br />
-       <div data-search-indexing-allowed="true">{% editable article.body %}</div>
-      </p>
+       {% editable article.body %}
+      </div>
      </div>
           
      <div id="comments">
@@ -41,7 +41,7 @@
        <div class="hr"><h4>{{ "comments_for_count" |lc }}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span></h4></div>
      
       {% for comment in article.comments %}
-      <p class="edy-site-blog-comment">{{ comment.body }}
+      <p class="edy-site-blog-comment content-hyphenate">{{ comment.body }}
       <br /><span class="data2">{{ comment.author }}, {{ comment.created_at | format_date:"%d. %b. %y" }}</span>{% removebutton %}</p>
       <br />
       {% endfor %}

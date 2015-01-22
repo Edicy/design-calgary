@@ -6,6 +6,15 @@
 
 body, p {margin:0; padding:0;}
 body {background-color:#e4f8ff; font: 13px/21px Georgia, 'times new roman', serif; color:#052d3e;}
+
+.content-hyphenate {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
 img {border: none;}
 
 /* Editable content image */
