@@ -9,6 +9,6 @@
 {% if site.search.enabled %}
 <div id="search">
 <form action="" class="edys-search">
-<div><input type="text" id="onpage_search"/></div></form>
+<div><input type="text" id="onpage_search" placeholder="{{  "search" | lc }}" /></div></form>
 </div>{% endif %}
    </div>
