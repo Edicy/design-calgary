@@ -7,7 +7,7 @@
 </head>
 <body>
 {% include "Header" %}
-<div id="container">
+<div id="container" class="content-hyphenate">
 	<div id="contentBG">
   <div id="content">
    <div id="body" class="left">
@@ -28,7 +28,7 @@
        </div>
       
      </div>
-     <div class="clearfix content-hyphenate">
+     <div class="clearfix">
       <h2><a href="{{ article.url }}" class="none">{{ article.title }}</a></h2>
       <div class="data">{{ article.author.name }}, <a href="{{ article.url }}#comments">{{ "comments" |lc }}: {{ article.comments_count }}</a></div>
       {{ article.excerpt }} <a href="{{ article.url }}">{{ "read_more" |lc }}...</a>

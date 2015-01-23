@@ -7,7 +7,7 @@
 </head>
 <body>
 {% include "Header" %}
-<div id="container">
+<div id="container" class="content-hyphenate">
 	<div id="contentBG">
   <div id="content">
    <div id="body" class="left">
@@ -29,7 +29,7 @@
      <div>
       <h2>{% editable article.title plain="true" %}</h2>
       <div class="data">{{ article.author.name }}, <a href="{{ article.url }}#comments">{{ "comments" |lc }}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span></a></div>
-      <div class="clearfix content-hyphenate">
+      <div class="clearfix">
        {% editable article.excerpt %}
        <br /><br />
        {% editable article.body %}
@@ -41,7 +41,7 @@
        <div class="hr"><h4>{{ "comments_for_count" |lc }}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span></h4></div>
      
       {% for comment in article.comments %}
-      <p class="edy-site-blog-comment content-hyphenate">{{ comment.body }}
+      <p class="edy-site-blog-comment">{{ comment.body }}
       <br /><span class="data2">{{ comment.author }}, {{ comment.created_at | format_date:"%d. %b. %y" }}</span>{% removebutton %}</p>
       <br />
       {% endfor %}

@@ -6,12 +6,12 @@
 </head>
 <body>
 {% include "Header" %}
-<div id="container">
+<div id="container" class="content-hyphenate">
 	<div id="contentBG">
   <div id="content">
    <div id="body" class="left">
     <div class="text">
-                                    <div class="text-inner clearfix content-hyphenate" data-search-indexing-allowed="true">
+                                    <div class="text-inner clearfix" data-search-indexing-allowed="true">
      {% content %}
                                     </div>
     </div>

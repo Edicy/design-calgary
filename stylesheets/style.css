@@ -380,3 +380,9 @@ body .add-article {
   display: inline-block !important;
   text-decoration: none;
 }
+
+#content .edy-btn-removecomment {
+  position: relative;
+  top: 2px;
+  line-height: 0 !important;
+}
