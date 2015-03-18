@@ -38,35 +38,35 @@
       "component": true,
       "file": "components/footer.tpl",
       "layout_name": "footer",
-      "title": "footer"
+      "title": "Footer"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/head.tpl",
       "layout_name": "head",
-      "title": "head"
+      "title": "Head"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/header.tpl",
       "layout_name": "header",
-      "title": "header"
+      "title": "Header"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/js.tpl",
       "layout_name": "js",
-      "title": "js"
+      "title": "JS"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/sidebar.tpl",
       "layout_name": "sidebar",
-      "title": "sidebar"
+      "title": "Sidebar"
     }
   ],
   "assets": [
