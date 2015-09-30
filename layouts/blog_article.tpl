@@ -3,7 +3,7 @@
 <head>
 {% include "Head" %} 
 {{ blog.rss_link }}
-  <title>{{article.title}} &laquo; {{page.title}} | {{site.name}}</title>
+  <title>{{article.title}} &laquo; {{page.title}} | {{ page.site_title }}</title>
 </head>
 <body>
 {% include "Header" %}
